@@ -515,8 +515,6 @@ img {
 .right-part .link:hover,
 .right-part .link:focus {
   background-color: var(--accent-color);
-
-  fill: var(--primary-white);
 }
 
 /* Portfolio */
