@@ -671,6 +671,8 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+
+  transition: opacity 750ms var(--time-function);
 }
 
 .backdrop .form {
