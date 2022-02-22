@@ -141,11 +141,11 @@ img {
 
 .site-nav .link {
   color: var(--secondary-text-color);
+  transition: color 250ms var(--time-function);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--time-function);
 }
 
 .site-nav .link.current {
@@ -173,6 +173,8 @@ img {
   align-items: center;
   /* padding-top: 32px;
   padding-bottom: 32px; */
+
+  transition: color 250ms var(--time-function);
 }
 
 .icon.phone,
@@ -184,7 +186,6 @@ img {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--time-function);
 }
 
 .header .contacts {
@@ -384,6 +385,9 @@ img {
 
   align-items: center;
   fill: var(--primary-icon-color);
+
+  transition: background-color 250ms var(--time-function),
+    fill 250ms var(--time-function);
 }
 .social-nav:not(:last-child) {
   margin-right: 10px;
@@ -397,9 +401,6 @@ img {
   background-color: var(--accent-color);
 
   fill: var(--primary-white);
-
-  transition: background-color 250ms var(--time-function),
-    fill 250ms var(--time-function);
 }
 
 /* Our Clients */
@@ -421,6 +422,9 @@ img {
   border-radius: 4px;
 
   fill: var(--primary-icon-color);
+
+  transition: border-color 250ms var(--time-function),
+    fill 250ms var(--time-function);
 }
 
 .clients-list .item:not(:last-child) {
@@ -432,9 +436,6 @@ img {
   fill: var(--accent-color);
 
   border-color: var(--accent-color);
-
-  transition: border-color 250ms var(--time-function),
-    fill 250ms var(--time-function);
 }
 /* Footer */
 
@@ -506,6 +507,9 @@ img {
 
   fill: var(--primary-white);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--time-function),
+    fill 250ms var(--time-function);
 }
 
 .right-part .link:hover,
@@ -513,9 +517,6 @@ img {
   background-color: var(--accent-color);
 
   fill: var(--primary-white);
-
-  transition: background-color 250ms var(--time-function),
-    fill 250ms var(--time-function);
 }
 
 /* Portfolio */
@@ -549,6 +550,9 @@ img {
 
   color: var(--secondary-text-color);
   cursor: pointer;
+
+  transition: background-color 250ms var(--time-function),
+    color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -562,9 +566,6 @@ img {
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: background-color 250ms var(--time-function),
-    color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 /* Projects */
@@ -590,13 +591,14 @@ img {
 .project-list .link {
   display: block;
   position: relative;
+
+  transition: box-shadow 250ms var(--time-function);
 }
 
 .project-list .link:hover,
 .project-list .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms var(--time-function);
 }
 
 .card-description {
@@ -672,7 +674,8 @@ img {
   opacity: 1;
   visibility: visible;
 
-  transition: opacity 750ms var(--time-function);
+  transition: opacity 750ms var(--time-function),
+    visibility 750ms var(--time-function);
 }
 
 .backdrop .form {
@@ -703,6 +706,8 @@ img {
   height: 30px;
   border: 0;
   border-radius: 50%;
+
+  cursor: pointer;
 
   background-color: var(--primary-white);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
